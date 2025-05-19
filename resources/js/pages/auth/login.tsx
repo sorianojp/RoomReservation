@@ -101,10 +101,12 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                     <TextLink href={route('register')} tabIndex={5}>
                         Sign up
                     </TextLink>
+                    <a href="/auth/google">
                     <Button type="button" className="mt-4 w-full" tabIndex={6} disabled={processing}>
                         {processing && <LoaderCircle className="h-4 w-4 animate-spin" />}
-                        <a href="/auth/google">Google Login</a>
+                        Google Login
                     </Button>
+                    </a>
                 </div>
             </form>
 
