@@ -14,9 +14,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 });
 
-Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])
-     ->name('login.google');
-
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('login.google');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
 require __DIR__.'/settings.php';
