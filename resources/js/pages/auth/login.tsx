@@ -101,11 +101,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                     <TextLink href={route('register')} tabIndex={5}>
                         Sign up
                     </TextLink>
-                    <TextLink href={route('login.google')} tabIndex={5}>
-                Log in with Google
-                    </TextLink>
-                    <a href="/auth/google">Log in with Google</a>
-
+                    <a href="{{ route('login.google') }}">Log in with Google</a>
                 </div>
             </form>
 
